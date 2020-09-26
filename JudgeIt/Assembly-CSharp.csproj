@@ -45,7 +45,6 @@
      <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
      <Compile Include="Assets\Scripts\Utilities\DebugColor.cs" />
      <Compile Include="Assets\Scripts\UI\CrimeHandler.cs" />
-     <Compile Include="Assets\Scripts\Scriptable\Character.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

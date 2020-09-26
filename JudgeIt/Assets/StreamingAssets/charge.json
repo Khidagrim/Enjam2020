@@ -1,0 +1,26 @@
+[
+    {
+       "text":"Dit chocolatine au lieu de pain au chocolat",
+       "score":-5
+    },
+ 
+    {
+       "text":"Dit pain au chocolat au lieu de chocolatine",
+       "score":-5
+    },
+ 
+    {
+       "text":"A tué sa famille, l'a cuisiné et servi à ses invités qui témoignent : 'C'était plutôt bon'",
+       "score":-20
+    },
+ 
+    {
+       "text":"Met le lait avant les céréales",
+       "score":-5
+    },
+ 
+    {
+       "text":"Ne ramasse pas les crottes de son chien dans la rue",
+       "score":-5
+    }
+ ]
