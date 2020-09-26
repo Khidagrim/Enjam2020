@@ -65,6 +65,12 @@
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\DebugColor.cs" />
     <Compile Include="Assets\Scripts\UI\CrimeHandler.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterVisuals.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\MouthVisuals.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\HairVisuals.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\FaceVisuals.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\EyesVisuals.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\BodyVisuals.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

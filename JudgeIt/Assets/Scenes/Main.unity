@@ -363,6 +363,10 @@ PrefabInstance:
       propertyPath: sliderJugementHandler
       value: 
       objectReference: {fileID: 1220329539}
+    - target: {fileID: 2088131909154731572, guid: d7009da09c0f84b41867ae098f97bbb0, type: 3}
+      propertyPath: characterVisualsSet
+      value: 
+      objectReference: {fileID: 11400000, guid: dcfacf4d53cfeca469af30aba73d1751, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7009da09c0f84b41867ae098f97bbb0, type: 3}
 --- !u!1001 &4682203057760109648
@@ -372,6 +376,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 209521934, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: frontHair
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 209521934, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: face
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 209521934, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: head
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 209521934, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 209521934, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: backHair
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 209521934, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: visualsTransform
+      value: 
+      objectReference: {fileID: 4682203057760109649}
     - target: {fileID: 4682203057168371364, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
       propertyPath: m_Name
       value: Game-canvas
@@ -582,3 +610,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+--- !u!4 &4682203057760109649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3436666066711589390, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+  m_PrefabInstance: {fileID: 4682203057760109648}
+  m_PrefabAsset: {fileID: 0}

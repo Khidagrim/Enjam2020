@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class CharacterManager : Singleton<CharacterManager>
 {
-    
+
+    /// <summary>
+    /// Which set of character visuals we're using
+    /// </summary>
+    public CharacterVisuals characterVisualsSet;
 
     public void Init()
     {
-        // recuperer les scriptable objects
-
     }
 
     public void KillCurrentCharacter()
@@ -20,5 +22,13 @@ public class CharacterManager : Singleton<CharacterManager>
     public void FreeCurrentCharacter()
     {
         DebugColor.Orange("FREE character");
+    }
+
+    public void GenerateNewCharacter(CharacterHandler charHandler)
+    {
+        if (characterVisualsSet == null) return;
+
+        var character = characterVisualsSet.GenerateCharacter();
+        charHandler.SetupCharacter(character);
     }
 }
