@@ -36,8 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
+     <Compile Include="Assets\Scripts\UI\CharacterHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\CrimeHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\AccusationHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\SliderJugementHandler.cs" />
+     <Compile Include="Assets\Scripts\Utilities\DebugColor.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
