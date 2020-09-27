@@ -9,10 +9,13 @@ public class CharacterHandler : MonoBehaviour
 
     public void Init()
     {
+        // Safe check
         if (visualsTransform == null)
             visualsTransform = GameObject.Find("CharacterVisuals").transform;
 
-        CharacterManager.Instance.GenerateNewCharacter(this);
+        // Generate character
+        var character = CharacterManager.Instance.GenerateNewCharacter();
+        SetupCharacter(character);
     }
 
 
@@ -40,7 +43,7 @@ public class CharacterHandler : MonoBehaviour
             img.color = spriteColor.color;
 
             // Make the full visuals child of this gameobject
-            newObj.transform.parent = visualsTransform != null ? visualsTransform : transform;
+            newObj.transform.SetParent(visualsTransform, false);
 
             // make it fullscreen
             rect.anchorMin = new Vector2(0, 0);

@@ -10,6 +10,11 @@ public class CharacterManager : Singleton<CharacterManager>
     /// </summary>
     public CharacterVisuals characterVisualsSet;
 
+    /// <summary>
+    /// Reference to the current accusationHandler
+    /// </summary>
+    public CrimeHandler crimeHandler;
+
     public void Init()
     {
     }
@@ -24,11 +29,16 @@ public class CharacterManager : Singleton<CharacterManager>
         DebugColor.Orange("FREE character");
     }
 
-    public void GenerateNewCharacter(CharacterHandler charHandler)
+    public List<SpriteColorPair> GenerateNewCharacter()
     {
-        if (characterVisualsSet == null) return;
+        // Safe check
+        if (characterVisualsSet == null) return default(List<SpriteColorPair>);
 
+        // Generate character's charges
+        crimeHandler.GenerateNewCharges();
+
+        // Generate character's visuals
         var character = characterVisualsSet.GenerateCharacter();
-        charHandler.SetupCharacter(character);
+        return character;
     }
 }

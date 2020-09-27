@@ -29,41 +29,41 @@ public class CharacterVisuals : ScriptableObject
     public List<SpriteColorPair> GenerateCharacter()
     {
         // Generate hair
-        var hairVisual = GetRandomObjectFromList<HairVisuals>(hairList);
-        var hairColor = GetRandomObjectFromList<Color>(hairColors);
+        var hairVisual = Helpers.GetRandomObjectFromList<HairVisuals>(hairList);
+        var hairColor = Helpers.GetRandomObjectFromList<Color>(hairColors);
 
         SpriteColorPair frontHair = new SpriteColorPair(hairVisual.frontHair, hairColor);
         SpriteColorPair backHair = new SpriteColorPair(hairVisual.backHair, hairColor);
 
 
         // Generate eyes
-        var eyesVisual = GetRandomObjectFromList<EyesVisuals>(eyesList);
-        var eyesColor = GetRandomObjectFromList<Color>(eyesColors);
+        var eyesVisual = Helpers.GetRandomObjectFromList<EyesVisuals>(eyesList);
+        var eyesColor = Helpers.GetRandomObjectFromList<Color>(eyesColors);
 
-        SpriteColorPair eyes = new SpriteColorPair(eyesVisual.line, Color.white);
-        SpriteColorPair eyebrows = new SpriteColorPair(eyesVisual.eyebrows, Color.white);
+        SpriteColorPair eyes = new SpriteColorPair(eyesVisual.line, Color.black);
+        SpriteColorPair eyebrows = new SpriteColorPair(eyesVisual.eyebrows, Color.black);
         SpriteColorPair pupils = new SpriteColorPair(eyesVisual.pupils, eyesColor);
 
 
         // Generate mouth
-        var mouthVisual = GetRandomObjectFromList<MouthVisuals>(mouthList);
+        var mouthVisual = Helpers.GetRandomObjectFromList<MouthVisuals>(mouthList);
 
-        SpriteColorPair mouth = new SpriteColorPair(mouthVisual.line, Color.white);
+        SpriteColorPair mouth = new SpriteColorPair(mouthVisual.line, Color.black);
 
 
         // Generate face
-        var faceVisual = GetRandomObjectFromList<FaceVisuals>(faceList);
-        var skinColor = GetRandomObjectFromList<Color>(skinColors);
+        var faceVisual = Helpers.GetRandomObjectFromList<FaceVisuals>(faceList);
+        var skinColor = Helpers.GetRandomObjectFromList<Color>(skinColors);
 
         SpriteColorPair face = new SpriteColorPair(faceVisual.line, skinColor);
 
         // Generate body and all its infills. A body can have N different colors
-        var bodyVisual = GetRandomObjectFromList<BodyVisuals>(bodyList);
-        var body = new SpriteColorPair(bodyVisual.line, Color.white);
+        var bodyVisual = Helpers.GetRandomObjectFromList<BodyVisuals>(bodyList);
+        var body = new SpriteColorPair(bodyVisual.line, Color.black);
         var bodyInfills = new List<SpriteColorPair>();
         foreach(var sprite in bodyVisual.infills)
         {
-            Color rndColor = GetRandomObjectFromList<Color>(clothesColors);
+            Color rndColor = Helpers.GetRandomObjectFromList<Color>(clothesColors);
             bodyInfills.Add(new SpriteColorPair(sprite, rndColor));
         }
 
@@ -90,14 +90,7 @@ public class CharacterVisuals : ScriptableObject
         return returnList;
     }
 
-    private T GetRandomObjectFromList<T>(List<T> list)
-    {
-        // Safe check
-        if (list.Count < 1) return default(T);
 
-        var rnd = Mathf.RoundToInt(Random.Range(0, list.Count - 1));
-        return list[rnd];
-    }
 
     public void RandomMethodeLol()
     {

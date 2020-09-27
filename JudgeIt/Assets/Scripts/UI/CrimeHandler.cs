@@ -6,6 +6,8 @@ using System.Linq;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
 using System;
+using UnityEngine.UI;
+using TMPro;
 
 [Serializable]
 public class ChargeData
@@ -16,6 +18,13 @@ public class ChargeData
 
 public class CrimeHandler : MonoBehaviour
 {
+    // Gameplay properties
+    public Transform textsContainer;
+
+    private List<ChargeData> curCharges;
+
+
+    // Load JSON properties
     public List<ChargeData> chargeDatas;
 
     public Dictionary<string,string>[] dico;
@@ -24,7 +33,11 @@ public class CrimeHandler : MonoBehaviour
 
     public void Init()
     {
+        // Set this object as reference in CharacterManager
+        CharacterManager.Instance.crimeHandler = this;
+
         chargeDatas = new List<ChargeData>();
+        curCharges = new List<ChargeData>();
         GetAllCharges();
     }
 
@@ -51,6 +64,47 @@ public class CrimeHandler : MonoBehaviour
             chargeDatas.Add(chargeData);
         }
 
+    }
+
+    public void GenerateNewCharges(int count = 3)
+    {
+        for (int i = 0; i < textsContainer.childCount; i++)
+        {
+            // Generate the charges
+            ChargeData charge;
+            bool isDuplicate = false;
+            int iterationCount = 0;
+
+            // If the charge is duplicate, generate a new one
+            do
+            {
+                charge = Helpers.GetRandomObjectFromList<ChargeData>(chargeDatas);
+                isDuplicate = curCharges.Contains(charge);
+
+                // Exit condition to prevent infinite looping
+                iterationCount++;
+                if (iterationCount > 1000)
+                {
+                    DebugColor.Red("1000 iterations reached in loop, there must be a problem");
+                    return;
+                }
+
+            } while (isDuplicate);
+
+
+            // Add the charges
+            curCharges.Add(charge);
+
+            // Display the generated charge
+            var child = textsContainer.GetChild(i);
+            var tmComponent = child.GetComponent<TextMeshProUGUI>();
+
+            // Check if the child has a TextMeshProUGUI component
+            if (tmComponent != null)
+                tmComponent.text = charge.description;
+            else
+                DebugColor.Red("No TextMeshProUGUI Component found on " + child.name);
+        }
     }
 
 

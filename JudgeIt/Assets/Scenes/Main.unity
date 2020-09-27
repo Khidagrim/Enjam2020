@@ -405,6 +405,10 @@ PrefabInstance:
       propertyPath: visualsTransform
       value: 
       objectReference: {fileID: 147439997}
+    - target: {fileID: 561675011, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: textsContainer
+      value: 
+      objectReference: {fileID: 4682203057760109649}
     - target: {fileID: 4456914562544281773, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 416
@@ -561,6 +565,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4682203058378121114, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4682203058602723590, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -619,3 +627,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+--- !u!224 &4682203057760109649 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4682203058856340916, guid: e25ac9813f05a7d4b8fa029b7a2406a1, type: 3}
+  m_PrefabInstance: {fileID: 4682203057760109648}
+  m_PrefabAsset: {fileID: 0}
