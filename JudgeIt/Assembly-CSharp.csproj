@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Managers\SceneFadeManager.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuHandler.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\CreditsHandler.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\PauseMenuHandler.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
