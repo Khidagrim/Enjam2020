@@ -7,6 +7,10 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
 
+
+    public AudioSource audioTimer;
+    public AudioClip tictac;
+    public AudioClip endTimer;
     public TextMeshProUGUI textMeshProUGUI;
 
     private int timer;
@@ -27,6 +31,16 @@ public class Timer : MonoBehaviour
             else
                 textMeshProUGUI.text = "00:0"+timer;
             timer--;
+            if(timer == 5)
+            {
+                audioTimer.clip = tictac;
+                audioTimer.Play();
+            }
+            if (timer  < 1)
+            {
+                audioTimer.clip = endTimer;
+                audioTimer.Play();
+            }
         }
         GameManager.Instance.EndTheGame();
     }

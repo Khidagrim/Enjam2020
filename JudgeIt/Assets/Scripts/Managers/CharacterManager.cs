@@ -40,6 +40,11 @@ public class CharacterManager : Singleton<CharacterManager>
         {
             FreeKillMemoryList.Add("kill");
 
+            if(AudiencePreferenceHandler.Instance.audiencePref == AudiencePreferenceHandler.AudiencePreference.KILL)
+                PeopleVoiceHandler.Instance.PlayYeah();
+            else
+                PeopleVoiceHandler.Instance.PlayBouh();
+
             scoreModificator = GetAllLastPlayerChoices("kill") * ScoreManager.Instance.scoreIncreaseKill / 3;
 
             if(score > 0)// et qu il ne le devait pas
@@ -52,6 +57,11 @@ public class CharacterManager : Singleton<CharacterManager>
         else // si il est relaxé
         {
             FreeKillMemoryList.Add("free");
+
+            if(AudiencePreferenceHandler.Instance.audiencePref == AudiencePreferenceHandler.AudiencePreference.FREE)
+                PeopleVoiceHandler.Instance.PlayYeah();
+            else
+                PeopleVoiceHandler.Instance.PlayBouh();
 
             scoreModificator = GetAllLastPlayerChoices("free") * ScoreManager.Instance.scoreIncreaseFree / 3;
 
@@ -71,6 +81,7 @@ public class CharacterManager : Singleton<CharacterManager>
         UIManager.Instance.crimeHandlerPanel.GetComponent<CrimeHandler>().curCharges.Clear();
 
         UIManager.Instance.characterHandler.GetComponent<CharacterHandler>().SetupCharacter(GenerateNewCharacter());
+        AudiencePreferenceHandler.Instance.GenerateAudiencePreference();
     }
 
     public List<SpriteColorPair> GenerateNewCharacter()

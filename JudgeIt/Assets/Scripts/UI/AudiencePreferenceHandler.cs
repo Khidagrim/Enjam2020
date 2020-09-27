@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudiencePreferenceHandler : MonoBehaviour
+public class AudiencePreferenceHandler : Singleton<AudiencePreferenceHandler>
 {
     public enum AudiencePreference { NONE = 0, FREE, KILL, }
     public ParticleSystem killParticles;
@@ -39,9 +39,11 @@ public class AudiencePreferenceHandler : MonoBehaviour
     {
         // 1 in 4 chances for the public to have a preference
         var rnd = Random.Range(0, 4);
-        if (rnd < 1) return AudiencePreference.NONE;
+        if (rnd > 1) return AudiencePreference.NONE;
 
         rnd = Random.Range(0, 1);
-        return rnd < .5f ? AudiencePreference.FREE : AudiencePreference.KILL;
+        AudiencePreference a = rnd < .5f ? AudiencePreference.FREE : AudiencePreference.KILL;
+        audiencePref = a;
+        return a;
     }
 }
