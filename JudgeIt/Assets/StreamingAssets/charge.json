@@ -1,26 +1,202 @@
 [
     {
-       "text":"Dit chocolatine au lieu de pain au chocolat",
-       "score":-5
+        "text": "Dit chocolatine au lieu de pain au chocolat",
+        "score": -5
     },
- 
     {
-       "text":"Dit pain au chocolat au lieu de chocolatine",
-       "score":-5
+        "text": "Dit pain au chocolat au lieu de chocolatine",
+        "score": -5
     },
- 
     {
-       "text":"A tué sa famille, l'a cuisiné et servi à ses invités qui témoignent : 'C'était plutôt bon'",
-       "score":-20
+        "text": "A tué sa famille, l'a cuisiné et servi à ses invités qui témoignent : 'C'était plutôt bon'",
+        "score": -20
     },
- 
     {
-       "text":"Met le lait avant les céréales",
-       "score":-5
+        "text": "Met le lait avant les céréales",
+        "score": -5
     },
- 
     {
-       "text":"Ne ramasse pas les crottes de son chien dans la rue",
-       "score":-5
+        "text": "Ne ramasse pas les crottes de son chien dans la rue",
+        "score": -5
+    },
+    {
+        "text": "Dab en éternuant dans son coude",
+        "score": -5
+    },
+    {
+        "text": "Aime les pizzas à l'ananas",
+        "score": -10
+    },
+    {
+        "text": "Paye tout en pièces de 1 centime",
+        "score": -5
+    },
+    {
+        "text": "Fait sa toilette matinale dans les transports en commun",
+        "score": -20
+    },
+    {
+        "text": "Ne s'arrête pas en voiture pour laisser passer les piétons",
+        "score": -10
+    },
+    {
+        "text": "Te dit \"Ok Boomer\" si tu as plus de 25 ans",
+        "score": -10
+    },
+    {
+        "text": "Travaille sur Mac",
+        "score": -5
+    },
+    {
+        "text": "Spoil les films et les séries",
+        "score": -20
+    },
+    {
+        "text": "A déjà crunch dans sa vie",
+        "score": -5
+    },
+    {
+        "text": "Vend ses habitants dans Animal Crossing",
+        "score": -10
+    },
+    {
+        "text": "Innonde la salle de bain en prenant sa douche",
+        "score": -5
+    },
+    {
+        "text": "Ping tout le monde sur Discord",
+        "score": -5
+    },
+    {
+        "text": "Garde des gens dans sa cave pour une expérience d'Escape Game",
+        "score": -20
+    },
+    {
+        "text": "Change sa sonnerie de téléphone dans les lieux publics",
+        "score": -5
+    },
+    {
+        "text": "Sait où tu habites et a même le double de tes clés",
+        "score": -20
+    },
+    {
+        "text": "Cuisine ses carbonaras avec de la crème fraîche",
+        "score": -5
+    },
+    {
+        "text": "Dit souvent \"C'était mieux dans le livre\"",
+        "score": -5
+    },
+    {
+        "text": "Est gourou dans une secte",
+        "score": -20
+    },
+    {
+        "text": "Joue au pirate en Somalie",
+        "score": -20
+    },
+    {
+        "text": "Cuisine pour tous ses colocataires",
+        "score": 10
+    },
+    {
+        "text": "S'entraîne régulièrement à faire des poses Jojo's Bizarre Adventure",
+        "score": 5
+    },
+    {
+        "text": "Donne l'appoint en pièces au moment de passer en caisse",
+        "score": 5
+    },
+    {
+        "text": "Traverse au passage piéton et attend que le petit bonhomme soit vert",
+        "score": 5
+    },
+    {
+        "text": "A créé une association pour la protection des pangolins d'Asie du Sud-Est",
+        "score": 20
+    },
+    {
+        "text": "A toujours un sachet de sucre dans ses poches en cas d'hypoglycémie",
+        "score": 5
+    },
+    {
+        "text": "Prends des vitamines tous les matins",
+        "score": 5
+    },
+    {
+        "text": "Va au Bock'N'Roll tous les jeudis soirs avec ses collègues",
+        "score": 10
+    },
+    {
+        "text": "Fait régulièrement des dons du sang",
+        "score": 20
+    },
+    {
+        "text": "Ramène un pain perdu maison en soirée",
+        "score": 10
+    },
+    {
+        "text": "Ouvre délicatement le papier cadeau au lieu de l'arracher",
+        "score": 5
+    },
+    {
+        "text": "Garde ton chat en vacances",
+        "score": 5
+    },
+    {
+        "text": "Porte son masque H24",
+        "score": 5
+    },
+    {
+        "text": "Apporte des bouteilles d'eau à Mme Martin, 80 ans, en période de canicule",
+        "score": 10
+    },
+    {
+        "text": "Trie ses crayons de couleur par teinte",
+        "score": 5
+    },
+    {
+        "text": "A regardé l'intégrale de Kaamelott 11 fois",
+        "score": 5
+    },
+    {
+        "text": "Organise des pyjama party",
+        "score": 5
+    },
+    {
+        "text": "Fait du bénévolat",
+        "score": 5
+    },
+    {
+        "text": "Reste sobre pour ramener les copains bourrés en voiture",
+        "score": 20
+    },
+    {
+        "text": "Joue a Judge It!",
+        "score": 5
+    },
+    {
+        "text": "Est parti en mission humanitaire dans la Creuse",
+        "score": 20
+    },
+    {
+        "text": "Joue au pirate dans Sea of Thieves",
+        "score": 5
+    },
+    {
+        "text": "A aidé un prince nigérien à retrouver sa fortune",
+        "score": 20
+    },
+    {
+        "text": "Fait des choses bien",
+        "score": 5
+    },
+    {
+        "text": "Boit son café noir",
+        "score": 0
+    },
+    {
+        "text": "Porte 2 chaussettes différentes",
+        "score": 0
     }
- ]
+]

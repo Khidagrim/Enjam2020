@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class CharacterManager : Singleton<CharacterManager>
 {
-    
+
+    /// <summary>
+    /// Which set of character visuals we're using
+    /// </summary>
+    public CharacterVisuals characterVisualsSet;
+
+    /// <summary>
+    /// Reference to the current accusationHandler
+    /// </summary>
+    public CrimeHandler crimeHandler;
 
     public void Init()
     {
-        // recuperer les scriptable objects
-
     }
 
     public void KillCurrentCharacter()
@@ -20,5 +27,18 @@ public class CharacterManager : Singleton<CharacterManager>
     public void FreeCurrentCharacter()
     {
         DebugColor.Orange("FREE character");
+    }
+
+    public List<SpriteColorPair> GenerateNewCharacter()
+    {
+        // Safe check
+        if (characterVisualsSet == null) return default(List<SpriteColorPair>);
+
+        // Generate character's charges
+        crimeHandler.GenerateNewCharges();
+
+        // Generate character's visuals
+        var character = characterVisualsSet.GenerateCharacter();
+        return character;
     }
 }

@@ -9,6 +9,7 @@ public class AccusationHandler : MonoBehaviour
 
     public void Init()
     {
+
         DebugColor.Blue("Init buttons acc");
         killBtn.onClick.AddListener(()=>{
             

@@ -55,16 +55,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Scriptable\Character.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\UI\AccusationHandler.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterHandler.cs" />
     <Compile Include="Assets\Scripts\Utilities\Singleton.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\MouthVisuals.cs" />
     <Compile Include="Assets\Scripts\UI\SliderJugementHandler.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\EyesVisuals.cs" />
     <Compile Include="Assets\Scripts\Managers\CharacterManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\DebugColor.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\HairVisuals.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\FaceVisuals.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterVisuals.cs" />
     <Compile Include="Assets\Scripts\UI\CrimeHandler.cs" />
+    <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\BodyVisuals.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Helpers.cs" />
+    <Compile Include="Assets\Scripts\Managers\ScoreManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
