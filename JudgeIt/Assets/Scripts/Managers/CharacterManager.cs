@@ -58,7 +58,7 @@ public class CharacterManager : Singleton<CharacterManager>
             if(score < 0)// le joueur n'as pas jugé correctement;
                 ScoreManager.Instance.nb_errors += 1;
 
-            ScoreManager.Instance.CurrentAudience += ( ScoreManager.Instance.scoreIncreaseFree - scoreModificator);    
+            ScoreManager.Instance.CurrentAudience += (ScoreManager.Instance.scoreIncreaseFree - scoreModificator);    
             //on déplace le personnage vers la gauche + feedback condamner
         }
 
