@@ -13,13 +13,13 @@ public class AccusationHandler : MonoBehaviour
         DebugColor.Blue("Init buttons acc");
         killBtn.onClick.AddListener(()=>{
             
-            CharacterManager.Instance.KillCurrentCharacter();
+            CharacterManager.Instance.JudgeCurrentCharacter(false);
 
         });
 
         freeBtn.onClick.AddListener(()=>{
             
-            CharacterManager.Instance.FreeCurrentCharacter();
+            CharacterManager.Instance.JudgeCurrentCharacter(true);
 
         });
     }
