@@ -20,6 +20,11 @@ public class ScoreManager : Singleton<ScoreManager>
         set{
             m_currentAudience = value;
             UIManager.Instance.sliderJugementHandler.GetComponent<SliderJugementHandler>().ChangeSliderValue(value);
+
+            if(m_currentAudience <= 0 )
+            {
+                GameManager.Instance.Defeat();
+            }
         }
     }
 

@@ -11,6 +11,8 @@ public class UIManager : Singleton<UIManager>
 
     public GameObject sliderJugementHandler;
 
+    public GameObject DefeatScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,4 +27,8 @@ public class UIManager : Singleton<UIManager>
         sliderJugementHandler.GetComponent<SliderJugementHandler>().Init();
     }
 
+    public void ShowHideDefeatScreen(bool show)
+    {
+        DefeatScreen.SetActive(show);
+    }
 }
