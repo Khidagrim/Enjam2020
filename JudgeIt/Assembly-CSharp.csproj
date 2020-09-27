@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\UI\MainMenu\CreditsHandler.cs" />
      <Compile Include="Assets\Scripts\Utilities\Timer.cs" />
      <Compile Include="Assets\EndGameMenuHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\MainMenu\PauseMenuHandler.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalSprite: {fileID: 0}
   pressedSprite: {fileID: 0}
+  yShift: 20
 --- !u!1 &5811371228291988873
 GameObject:
   m_ObjectHideFlags: 0
