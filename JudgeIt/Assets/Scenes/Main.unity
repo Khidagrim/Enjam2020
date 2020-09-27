@@ -459,6 +459,10 @@ PrefabInstance:
       propertyPath: scoreIncreaseKill
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8079217817712969373, guid: d7009da09c0f84b41867ae098f97bbb0, type: 3}
+      propertyPath: errorThreshold
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7009da09c0f84b41867ae098f97bbb0, type: 3}
 --- !u!1001 &4682203057760109648
