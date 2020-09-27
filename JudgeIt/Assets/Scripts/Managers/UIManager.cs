@@ -19,9 +19,9 @@ public class UIManager : Singleton<UIManager>
 
     public void Init()
     {
-        characterHandler.GetComponent<CharacterHandler>().Init();
         crimeHandlerPanel.GetComponent<CrimeHandler>().Init();
         accusationHandler.GetComponent<AccusationHandler>().Init();
+        characterHandler.GetComponent<CharacterHandler>().Init();
         sliderJugementHandler.GetComponent<SliderJugementHandler>().Init();
     }
 
