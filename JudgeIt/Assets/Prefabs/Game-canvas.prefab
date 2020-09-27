@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc4433f669ff464ca8fa96a9b18f8b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textsContainer: {fileID: 0}
   chargeDatas: []
 --- !u!114 &209521934
 MonoBehaviour:
@@ -516,7 +517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 867108505289387367, guid: b79a5f127225e7d44ae08db52da5abc8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.3
+      value: -2.300003
       objectReference: {fileID: 0}
     - target: {fileID: 867108505289387367, guid: b79a5f127225e7d44ae08db52da5abc8, type: 3}
       propertyPath: m_SizeDelta.y
@@ -524,7 +525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 867108505289728488, guid: b79a5f127225e7d44ae08db52da5abc8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000012159
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 867108505289728488, guid: b79a5f127225e7d44ae08db52da5abc8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -540,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 867108505474866527, guid: b79a5f127225e7d44ae08db52da5abc8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2.3
+      value: -2.300003
       objectReference: {fileID: 0}
     - target: {fileID: 867108505474866527, guid: b79a5f127225e7d44ae08db52da5abc8, type: 3}
       propertyPath: m_SizeDelta.y

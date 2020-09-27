@@ -10,8 +10,8 @@ public class MainMenuHandler : MonoBehaviour
         SceneFadeManager.Instance.ChangeScene("Main");
     }
 
-    public void ShowCredits()
+    public void Quit()
     {
-
+        Application.Quit();
     }
 }

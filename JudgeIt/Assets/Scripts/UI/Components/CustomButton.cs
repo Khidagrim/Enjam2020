@@ -21,10 +21,6 @@ public class CustomButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         btnImage = GetComponent<Image>();
         btn = GetComponent<Button>();
         rt = GetComponent<RectTransform>();
-
-        Debug.Assert(normalSprite != null);
-        Debug.Assert(pressedSprite != null);
-
     }
 
     // Update is called once per frame
@@ -44,7 +40,7 @@ public class CustomButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         // Change children position
         for (int i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).transform.position -= new Vector3(0, yShift, 0);
+            transform.GetChild(i).transform.position -= new Vector3(0, yShift / 2, 0);
         }
     }
 
@@ -57,7 +53,8 @@ public class CustomButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         // Change children position
         for (int i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).transform.position += new Vector3(0, yShift, 0);
+            transform.GetChild(i).transform.position += new Vector3(0, yShift/2, 0);
+        
         }
     }
 }
