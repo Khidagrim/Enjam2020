@@ -26,7 +26,6 @@ public class CharacterManager : Singleton<CharacterManager>
 
     public void JudgeCurrentCharacter(bool isFreed)
     {
-        DebugColor.Orange("KILL/Free character");
         // on recup le score general
         int score = 0;
         foreach(ChargeData chg in crimeHandler.curCharges)
@@ -42,9 +41,8 @@ public class CharacterManager : Singleton<CharacterManager>
             FreeKillMemoryList.Add("kill");
 
             scoreModificator = GetAllLastPlayerChoices("kill") * ScoreManager.Instance.scoreIncreaseKill / 3;
-            DebugColor.Purple("Score Modificator : "+scoreModificator); 
 
-            if(score < 0)// et qu il ne le devait pas
+            if(score > 0)// et qu il ne le devait pas
                 ScoreManager.Instance.nb_errors += 1;
 
             ScoreManager.Instance.CurrentAudience += ( ScoreManager.Instance.scoreIncreaseKill - scoreModificator);  
@@ -56,9 +54,8 @@ public class CharacterManager : Singleton<CharacterManager>
             FreeKillMemoryList.Add("free");
 
             scoreModificator = GetAllLastPlayerChoices("free") * ScoreManager.Instance.scoreIncreaseFree / 3;
-            DebugColor.Purple("Score Modificator : "+scoreModificator); 
 
-            if(score > 0)// le joueur n'as pas jugé correctement;
+            if(score < 0)// le joueur n'as pas jugé correctement;
                 ScoreManager.Instance.nb_errors += 1;
 
             ScoreManager.Instance.CurrentAudience += ( ScoreManager.Instance.scoreIncreaseFree - scoreModificator);    
