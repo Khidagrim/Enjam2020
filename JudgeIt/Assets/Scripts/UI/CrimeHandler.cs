@@ -21,7 +21,7 @@ public class CrimeHandler : MonoBehaviour
     // Gameplay properties
     public Transform textsContainer;
 
-    private List<ChargeData> curCharges;
+    public List<ChargeData> curCharges;
 
 
     // Load JSON properties
