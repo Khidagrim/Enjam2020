@@ -15,22 +15,22 @@ MonoBehaviour:
   hairList:
   - {fileID: 11400000, guid: 4d3ede8f6d2d66148b7bd0558a711211, type: 2}
   hairColors:
-  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 1}
   eyesList:
   - {fileID: 11400000, guid: 604976eccdf565c44b9cdee2591ece8a, type: 2}
   eyesColors:
-  - {r: 0.06541473, g: 0.9245283, b: 0.25295746, a: 0}
+  - {r: 0.06541473, g: 0.9245283, b: 0.25295746, a: 1}
   mouthList:
   - {fileID: 11400000, guid: 20fdb1c62b364d5418995773ddf7ad8e, type: 2}
   mouthColors: []
   faceList:
   - {fileID: 11400000, guid: 12bab07e7f3443b418e6693f3015d9fc, type: 2}
   skinColors:
-  - {r: 0.9433962, g: 0.8123264, b: 0.6096476, a: 0}
+  - {r: 0.9433962, g: 0.8123264, b: 0.6096476, a: 1}
   bodyList:
   - {fileID: 11400000, guid: dd4c8ec0b75568e4183f00ae5d8527b9, type: 2}
   clothesColors:
-  - {r: 1, g: 0.90488863, b: 0, a: 0}
-  - {r: 0.033675432, g: 1, b: 0, a: 0}
-  - {r: 0, g: 1, b: 0.9893317, a: 0}
-  - {r: 1, g: 0, b: 0.9275651, a: 0}
+  - {r: 1, g: 0.90488863, b: 0, a: 1}
+  - {r: 0.033675432, g: 1, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0.9893317, a: 1}
+  - {r: 1, g: 0, b: 0.9275651, a: 1}

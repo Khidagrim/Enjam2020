@@ -85,6 +85,8 @@ public class CharacterVisuals : ScriptableObject
         // And don't forget the back hair
         returnList.Add(backHair);
 
+        returnList.Reverse();
+
         return returnList;
     }
 
