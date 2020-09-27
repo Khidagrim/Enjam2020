@@ -11,4 +11,5 @@ public class EyesVisuals : ScriptableObject
     public Sprite line;
     public Sprite eyebrows;
     public Sprite pupils;
+    public Sprite infill;
 }

@@ -41,6 +41,7 @@ public class CharacterVisuals : ScriptableObject
         var eyesColor = Helpers.GetRandomObjectFromList<Color>(eyesColors);
 
         SpriteColorPair eyes = new SpriteColorPair(eyesVisual.line, Color.black);
+        SpriteColorPair eyesInfill = new SpriteColorPair(eyesVisual.infill, Color.white);
         SpriteColorPair eyebrows = new SpriteColorPair(eyesVisual.eyebrows, Color.black);
         SpriteColorPair pupils = new SpriteColorPair(eyesVisual.pupils, eyesColor);
 
@@ -72,7 +73,7 @@ public class CharacterVisuals : ScriptableObject
         // Smaller indexes are in front
         List<SpriteColorPair> returnList = new List<SpriteColorPair>() { 
             frontHair,
-            eyebrows, eyes, pupils,  
+            eyebrows, eyes, pupils, eyesInfill, 
             mouth, 
             face, 
             body
@@ -86,6 +87,13 @@ public class CharacterVisuals : ScriptableObject
         returnList.Add(backHair);
 
         returnList.Reverse();
+
+        //Cleanup returne list
+        foreach(SpriteColorPair elt in returnList)
+        {
+            if (elt.sprite == null)
+                elt.color = Color.clear;
+        }
 
         return returnList;
     }
