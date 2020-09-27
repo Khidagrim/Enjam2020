@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Utilities\Helpers.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\UI\Components\CustomButton.cs" />
     <Compile Include="Assets\Scripts\UI\AccusationHandler.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
     <Compile Include="Assets\Scripts\UI\CharacterHandler.cs" />
@@ -72,7 +73,9 @@
     <Compile Include="Assets\Scripts\Scriptable\CharacterVisuals.cs" />
     <Compile Include="Assets\Scripts\UI\CrimeHandler.cs" />
     <Compile Include="Assets\Scripts\Scriptable\CharacterPartsVisuals\BodyVisuals.cs" />
-    <Compile Include="Assets\Scripts\UI\Components\CustomButton.cs" />
+    <Compile Include="Assets\Scripts\Managers\SceneFadeManager.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuHandler.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\CreditsHandler.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
