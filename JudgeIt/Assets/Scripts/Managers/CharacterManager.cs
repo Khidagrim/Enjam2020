@@ -45,8 +45,6 @@ public class CharacterManager : Singleton<CharacterManager>
             DebugColor.Purple("Score Modificator : "+scoreModificator); 
 
             if(score < 0)// et qu il ne le devait pas
-                ScoreManager.Instance.nb_errors -= 1;
-            else // si il le devait bien
                 ScoreManager.Instance.nb_errors += 1;
 
             ScoreManager.Instance.CurrentAudience += ( ScoreManager.Instance.scoreIncreaseKill - scoreModificator);  
@@ -60,10 +58,8 @@ public class CharacterManager : Singleton<CharacterManager>
             scoreModificator = GetAllLastPlayerChoices("free") * ScoreManager.Instance.scoreIncreaseFree / 3;
             DebugColor.Purple("Score Modificator : "+scoreModificator); 
 
-            if(score < 0)// le joueur a jugé correctement;
+            if(score > 0)// le joueur n'as pas jugé correctement;
                 ScoreManager.Instance.nb_errors += 1;
-            else
-                ScoreManager.Instance.nb_errors -= 1;
 
             ScoreManager.Instance.CurrentAudience += ( ScoreManager.Instance.scoreIncreaseFree - scoreModificator);    
             //on déplace le personnage vers la gauche + feedback condamner
