@@ -20,6 +20,11 @@ public class ScoreManager : Singleton<ScoreManager>
         set{
             m_currentAudience = value;
             UIManager.Instance.sliderJugementHandler.GetComponent<SliderJugementHandler>().ChangeSliderValue(value);
+
+            if(m_currentAudience <= 0 )
+            {
+                GameManager.Instance.Defeat();
+            }
         }
     }
 
@@ -29,7 +34,7 @@ public class ScoreManager : Singleton<ScoreManager>
     /// <summary>
     /// The "morality" score, to see if the player is a good or bad judge
     /// </summary>
-    [HideInInspector] public float nb_errors = 0;
+    public float nb_errors = 0;
     public float errorThreshold = 10f;
 
     public float scoreIncreaseKill = 10;
@@ -46,6 +51,7 @@ public class ScoreManager : Singleton<ScoreManager>
     {
         m_currentAudience = curAudienceAtStart;
         ResetTimer();
+        nb_errors = 0;
     }
 
     void Update()
